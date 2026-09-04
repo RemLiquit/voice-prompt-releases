@@ -1,31 +1,25 @@
 # voice-prompt
 
-Dictado por voz local para macOS: mantienes una tecla, hablas, sueltas, y el
-texto transcrito y reescrito aparece donde tengas el cursor.
+Local, push-to-talk voice dictation for macOS. Hold a key, speak, release —
+the transcribed, cleaned-up text is pasted wherever your cursor is.
 
-Este repositorio solo distribuye **binarios compilados** (Releases). El
-código fuente es privado.
+This repository distributes compiled binaries only. Source code lives in a
+private repository.
 
-## Instalar
+## Install
 
 ```
-curl -fsSL https://raw.githubusercontent.com/RemLiquit/voice-prompt-releases/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/RemLiquit/voice-prompt-releases/master/install.sh | sh
 ```
 
-Descarga el último release, lo instala en `/Applications` y le quita el
-atributo de cuarentena de macOS para que abra sin el aviso de Gatekeeper (la
-app no está firmada con un certificado de Developer ID de pago).
+This downloads the latest release, installs it to `/Applications`, and
+removes the macOS quarantine flag so it opens without the Gatekeeper warning
+(the app isn't signed with a paid Developer ID certificate).
 
-Requisitos: macOS en Apple Silicon (arm64).
+**Requirements:** macOS on Apple Silicon (arm64).
 
-## Instalación manual
+## Manual install
 
-Descarga el `.zip` desde [Releases](https://github.com/RemLiquit/voice-prompt-releases/releases),
-descomprímelo y arrastra `voice-prompt.app` a `/Applications`. La primera vez
-tendrás que hacer clic derecho → Abrir para saltar el aviso de Gatekeeper.
-
-## Licencia
-
-© 2026 Diego (RemLiquit). Todos los derechos reservados. Estos binarios se
-distribuyen para su uso, no para su redistribución ni modificación. El
-código fuente no es público.
+Download the `.zip` from [Releases](https://github.com/RemLiquit/voice-prompt-releases/releases),
+unzip it, and drag `voice-prompt.app` to `/Applications`. On first launch,
+right-click → Open to bypass the Gatekeeper warning.
